@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+    background-color: transparent;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient( to right top, rgba(200, 243, 8, 0.795), rgb(0, 238, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(1rem);
+    display: flex;
+    background-color: transparent;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+    z-index: 1;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 15%;
+    z-index: 1;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(4, 248, 236, 0.3));
+    border-radius: 0rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.games {
+    flex: 2;
+}
+
+.user {
+    padding-top: 10px;
+}
+
+.user a {
+    height: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.user a:hover {
+    color: red;
+}
+
+.card-info {
+    color: blue
+}
+
+.card-info a:hover {
+    color: red;
+    text-decoration: none;
+    font-family: serif;
+}
+
+.card-info a {
+    color: rgb(58, 123, 197);
+    text-decoration: none;
+    font-family: serif;
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    align-items: center;
+}
+
+.link h3 {
+    padding: 0.5rem 2rem;
+}
+
+.pro {
+    background: linear-gradient(to right bottom, rgba(58, 247, 1, 0.7), rgba(0, 217, 255, 0.445));
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+    display: flexbox;
+    margin: 10px;
+}
+
+.pro a {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: brown;
+}
+
+.pro a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: larger;
+}
+
+.user p {
+    margin-top: 0px;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    transition: all 0.6s;
+    color: blue;
+}
+
+.link a:hover {
+    text-decoration: none;
+    color: red;
+    padding-left: 2rem;
+}
+
+
+/* GAMING SECTION */
+
+.status {
+    margin-bottom: 3rem;
+}
+
+.status input {
+    background: transparent;
+    border-color: slategrey;
+    border-radius: 5px;
+}
+
+.status button {
+    border-color: brown;
+    border-radius: 5px;
+}
+
+.games {
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    margin-right: 0rem;
+    border-radius: 1.5rem;
+    margin: 1rem 0rem;
+    margin-right: 5px;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 10px rgba(148, 226, 226, 0.863);
+    justify-content: space-between;
+}
+
+.progress {
+    background: linear-gradient(to right bottom, rgba(220, 221, 207, 0.7), rgba(100, 93, 93, 0.204));
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: gold;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-radius: 5px;
+    right: 40%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    color: rgb(77, 165, 165);
+}
+
+.card a {
+    transition: all 0.5s;
+}
+
+.card a:hover {
+    padding: 1rem;
+}
